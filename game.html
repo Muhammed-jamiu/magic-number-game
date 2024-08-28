@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Game</title>
+  </head>
+  <body 
+  class="body"
+    style="
+      margin: 80px auto;
+      width: 600px;
+      height: 600px;
+        background-image: url(./Javascript/image1.png);
+        background-position: center;
+        background-repeat: no-repeat;  
+        background-position: center; 
+        background-size:cover ;"
+>
+
+
+  <div>
+  <div style="border: double black 10px;
+    height: 450px;width: 400px; background:url(.//Javascript/image1.png); border-radius: 100px; box-sizing: border-box; border-style: double; box-shadow: 3px 12px 8 black;"    id="box">
+
+    <nav style="margin-top: 40px;margin-left: 50px; font-style: italic;color: whitesmoke; box-sizing: border-box; border: 2px solid black;width:300px;
+    border-radius: 50px;
+    box-shadow: 2px 8px 4px black;">Copyright&copy;2023. BY MUHAMMED-JAMIU</nav>
+
+    <p style="margin: 25px 0 30px 10px; text-align: center; width: 350px;border-radius: 50px; background-color: black;  text-transform: uppercase; color: whitesmoke; border: 5px solid black;">How Many Fingers am i holding up?</p>
+
+
+    <p><input style="margin-left: 50px; width: 300px; height: 50px; margin-bottom: 29px; border-radius: 50px;background-color: darkgray; text-transform: uppercase; box-sizing: border-box; box-shadow: 3px 5px 7px black; text-align: center;"   type="text" id="fingers" /></p>
+
+    <div  style="margin-left: 130px; margin-bottom: 20px;border: 4px solid ;background-color: red;text-transform: uppercase; width: 138px; border-radius: 50px;box-sizing: border-box;box-shadow: 2px 9px 10px black; ">Try your Luck</div>
+    <p style="margin-left: 60px">
+      <button
+        style="background-color: blue; border-radius: 50px; color: white; margin-left: 70px; width: 130px;height: 35px; box-sizing: border-box;box-shadow: 5px 10px black;"
+        id="Guess"
+      >
+        Guess!
+      </button>
+      <div style="margin-top: 50px; margin-left: 70px; text-transform: uppercase;color: whitesmoke;box-sizing: border-box;border: 2px solid black;width: 245px;border-radius: 50px;background-color: black;"    id="box1">Game of guessing number...</div>
+    </div>
+      <script id="text/javascript">
+        document.getElementById("Guess").onclick = function () {
+          var finger= Math.random();
+          finger = finger * 5;
+          finger = Math.floor(finger);
+          // alert(finger)
+
+          if (document.getElementById("fingers").value == finger) {
+            alert("weldone you got it right!!");
+          } else {
+            alert("Nope! try again," + " " + "it was"+" "+finger);
+          }
+        };
+      </script>
+    </p>
+  </body>
+</html>
